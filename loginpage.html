@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Custom Website</title>
+    <link rel="stylesheet" a href="css\font-awesome.min.css">
+	<link rel="stylesheet" href="styleloginpage.css">
+</head>
+<body>
+	<div class="center">
+        <h1> CLINIKO</h1>
+    <div class="container">
+	<img src="logo.png"/>
+		<form method="post" action="appointmentpage.html">
+			<div class="form-input">
+				<input type="text" name="name" placeholder="FULL NAME" value="" maxlength="30" required=""/>
+				<span><?php if (isset($name_error)) echo $name_error; ?></span>	
+			</div>
+			<div class="form-input">
+				<input type="password" name="password" placeholder="password" value="" maxlength="8" required=""/>
+				<span class="text-danger"><?php if (isset($password_error)) echo $password_error; ?></span>
+			</div>
+			<input type="submit" name="login" value="LOGIN" class="btn-login"/><br>
+			<p>Not yet a Member?<a href="signuppage.html">Sing Up</a></p>
+		</form>
+	</div>
+</body>
+</html>
