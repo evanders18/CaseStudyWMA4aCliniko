@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>signup</title>
+    <link rel="stylesheet" a href="css\font-awesome.min.css">
+	<link rel="stylesheet" href="appointmentpage.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body style="background-color:#81D8D0;">
+    
+	<div class="center">
+    
+    <form method="post" action="Userpage.php"  style="margin-left:-1px; margin-top:0px ;width: 40%;padding: 20px;border :3px solid #39ca74 ;background: white; border-radius: 10px 10px 10px 10px;">
+
+    
+
+
+
+
+<div class="contentP" style="font-weight: bold;">
+
+
+
+	<label>ID: <?php echo "" .isset($_SESSION['id']);?></label>
+
+	 	   <br>
+	 	   <br>
+	 	   <label> Email : <?php echo $conn['email']; ?></label>
+	 	   	 	   <br>
+	 	   <br>
+	 	   <label> Name : <?php echo $conn['name']; ?></label>
+	 	   	 	   <br>
+	 	   <br>
+	 	   <label> Contact Number : <?php echo $conn['mobile']; ?></label>
+	 	   	 	   <br>
+	 	   <br>
+    
+
+	 	   </div>
+    
+	
+
+	
+
+  
+</form>
+
+	</div>
+</body>
+</html>
